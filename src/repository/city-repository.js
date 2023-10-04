@@ -41,6 +41,7 @@ class CityRepository {
         where: {
           id: cityId,
         },
+        returning: true,
       });
       return city;
     } catch (error) {
