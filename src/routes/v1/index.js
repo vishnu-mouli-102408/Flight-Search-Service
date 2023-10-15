@@ -8,9 +8,6 @@ const {
   FlightController,
 } = require("../../controllers/index");
 
-// const CityController = require("../../controllers/city-controller.js");
-// const AirportController = require("../../controllers/airport-controller.js");
-
 router.post("/city", CityController.create);
 router.delete("/city/:id", CityController.destroy);
 router.get("/city/:id", CityController.get);
